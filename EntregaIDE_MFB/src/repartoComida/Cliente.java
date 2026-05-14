@@ -6,6 +6,10 @@ import java.util.ArrayList;
 public class Cliente extends Usuario{
 	private List <Pedido> historialPedidos;
 	
+	public List<Pedido> getHistorialPedidos(){
+		return historialPedidos;
+	}
+	
 	public Cliente(String nombreCliente, String emailCliente, String telefonoCliente) {
 		super(nombreCliente, emailCliente, telefonoCliente);
 		this.historialPedidos = new ArrayList<>();	
